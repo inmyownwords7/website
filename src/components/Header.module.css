@@ -1,0 +1,40 @@
+/* Header.module.css */
+.container {
+    @apply mx-auto px-6 py-4 flex items-center justify-between;
+}
+
+.header {
+    @apply bg-gray-900 text-white shadow-md sticky top-0 z-50;
+}
+
+.logo {
+    @apply text-2xl font-bold hover:text-gray-400;
+}
+
+.navLinks {
+    @apply flex flex-col lg:flex-row lg:space-x-6 text-lg px-6 lg:px-0;
+}
+
+.navItem {
+    @apply block py-2 hover:text-gray-400 transition;
+}
+
+.ctaButton {
+    @apply bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition;
+}
+
+.hamburger {
+    @apply lg:hidden block text-gray-400 hover:text-white focus:outline-none;
+}
+
+.mobileMenu {
+    @apply absolute lg:relative top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent;
+}
+
+.showMenu {
+    @apply block;
+}
+
+.hideMenu {
+    @apply hidden;
+}
