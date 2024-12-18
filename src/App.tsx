@@ -1,15 +1,14 @@
-import Header from "./components/Header.tsx";
-
+import Header from "./components/Header/Header.tsx";
+import CTA from "./components/CTA/CTA.tsx";
+import {ThemeProvider} from "./context/ThemeContext.tsx";
+import "./App.css"
 function App() {
   return (
       <div>
           <Header/>
-          <main className="p-6 text-center">
-              <h1 className="text-4xl font-bold mb-4">Welcome to My Website!</h1>
-              <p className="text-lg text-gray-600">
-                  This is your first React + Tailwind CSS app.
-              </p>
-          </main>
+          <ThemeProvider>
+          <CTA />
+          </ThemeProvider>
       </div>
   )
 }

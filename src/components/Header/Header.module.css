@@ -1,0 +1,47 @@
+/* Header.module.css */
+
+/* Main Header Styling */
+.header {
+    @apply relative flex items-center justify-between bg-gray-400 dark:bg-gray-800 dark:text-gray-100 px-4 py-2;
+}
+
+/* Container Wrapper */
+.containerWrapper {
+    @apply flex items-center justify-between w-full;
+}
+
+/* Left Section: Logo and Light Mode Button */
+.leftSection {
+    @apply flex items-center space-x-4;
+}
+
+.logo {
+    @apply text-2xl font-bold hover:text-gray-300;
+}
+
+.lightModeButton {
+    @apply bg-gray-300 dark:bg-gray-600 px-4 py-2 rounded;
+}
+
+/* Navigation Links */
+.navLinks {
+    @apply hidden lg:flex flex-row space-x-6;
+}
+
+.navList {
+    @apply flex flex-row space-x-6 list-none;
+}
+
+.navItem {
+    @apply block font-bold text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    @apply lg:hidden block text-gray-500 dark:text-gray-400 hover:text-white focus:outline-none;
+}
+
+/* Open Navigation Links for Mobile */
+.navLinks.open {
+    @apply flex flex-col absolute top-full left-0 w-full bg-gray-900 dark:bg-gray-700 p-4 lg:hidden;
+}

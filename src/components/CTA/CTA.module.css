@@ -1,0 +1,18 @@
+/* CTA.module.css */
+
+.mainContent {
+    @apply flex flex-col items-center justify-center h-screen text-center;
+    @apply bg-ctaBgLight text-ctaTextLight dark:bg-ctaBgDark dark:text-ctaTextDark;
+}
+
+/*:global(.dark) .mainContent {*/
+/*    @apply bg-ctaBgDark text-ctaTextDark; !* Dark Mode *!*/
+/*}*/
+
+.mainTitle {
+    @apply text-4xl font-bold mb-6;
+}
+
+.ctaButton {
+    @apply bg-blue-500 px-6 py-3 rounded hover:bg-blue-600 text-white mt-4;
+}
